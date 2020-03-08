@@ -5,7 +5,7 @@
     <div class="container d-flex align-items-center flex-column">
 
       <!-- Masthead Avatar Image -->
-      <!-- <img class="masthead-avatar mb-5" src="img/codecircle.svg" alt=""> -->
+      <img class="masthead-avatar mb-5" src="~/assets/codecircle.svg" alt="">
 
       <!-- Masthead Heading -->
       <h1 class="masthead-heading text-uppercase mb-0">Eugene Code Camp</h1>

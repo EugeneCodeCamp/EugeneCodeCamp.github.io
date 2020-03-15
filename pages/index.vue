@@ -53,17 +53,8 @@
               data-toggle="modal"
               data-target="#portfolioModal1"
             >
-              <div
-                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
-              >
-                <div
-                  class="portfolio-item-caption-content text-center text-white"
-                >
-                  <font-awesome-icon :icon="['fas', 'plus']" size="3x" />
-                </div>
-              </div>
               <h3 class="align-items-center justify-content-center h-100 w-100">
-                <font-awesome-icon :icon="['fas', 'user-friends']" />2/2 Eugene
+                <font-awesome-icon :icon="['fas', 'user-friends']" />TBA Eugene
                 Code Camp Meetup
               </h3>
             </div>
@@ -76,18 +67,9 @@
               data-toggle="modal"
               data-target="#portfolioModal2"
             >
-              <div
-                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
-              >
-                <div
-                  class="portfolio-item-caption-content text-center text-white"
-                >
-                  <font-awesome-icon :icon="['fas', 'plus']" size="3x" />
-                </div>
-              </div>
               <h3 class="align-items-center justify-content-center h-100 w-100">
-                <font-awesome-icon :icon="['fas', 'user-friends']" />3/1 Eugene
-                Code Camp Meetup
+                <font-awesome-icon :icon="['fas', 'user-friends']" />TBA Eugene
+                Hack4ACause Meetup
               </h3>
             </div>
           </div>
@@ -99,18 +81,9 @@
               data-toggle="modal"
               data-target="#portfolioModal3"
             >
-              <div
-                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
-              >
-                <div
-                  class="portfolio-item-caption-content text-center text-white"
-                >
-                  <font-awesome-icon :icon="['fas', 'plus']" size="3x" />
-                </div>
-              </div>
               <h3 class="align-items-center justify-content-center h-100 w-100">
-                <font-awesome-icon :icon="['fas', 'user-friends']" />4/5 Eugene
-                Code Camp Meetup
+                <font-awesome-icon :icon="['fas', 'user-friends']" />TBA Code
+                Camp Meetup
               </h3>
             </div>
           </div>

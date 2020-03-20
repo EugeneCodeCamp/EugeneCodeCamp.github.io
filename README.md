@@ -21,4 +21,10 @@ This site is an ongoing project, currently being built in [Vue.js](https://vuejs
 ### generate static project
     $ npm run generate
 
+## Linting
+
+### Prior to pushing files, please run
+    $ npm run lint
+    $ npm run lintfix
+    
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

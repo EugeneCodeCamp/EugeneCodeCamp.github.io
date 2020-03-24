@@ -1,98 +1,85 @@
 <template>
   <div>
     <div>
-      <div>
-        <div>
-          <b-navbar toggleable="lg" type="dark" class="navbar">
-            <b-navbar-brand href="#">
-              ECC
-            </b-navbar-brand>
-            <b-navbar-toggle target="nav-collapse" />
-            <b-collapse id="nav-collapse" is-nav>
-              <b-navbar-nav>
-                <b-nav-item href="#about">
-                  About
-                </b-nav-item>
-                <b-nav-item href="#events">
-                  Events
-                </b-nav-item>
-                <b-nav-item href="#resources">
-                  Resources
-                </b-nav-item>
-              </b-navbar-nav>
-            </b-collapse>
-          </b-navbar>
-        </div>
-        <nuxt />
-      </div>
-      <div class="footer text-center">
-        <div class="container">
-          <div class="row">
-            <!-- Footer Location -->
-            <div class="col-lg-4 mb-5 mb-lg-0">
-              <h4 class="text-uppercase mb-4">
-                <font-awesome-icon :icon="['fab', 'meetup']" />
-                ECC Meetup Events
-              </h4>
-              <p class="lead mb-0">
-                Head over to the
-                <a href="https://www.meetup.com/EugeneTech/">Eugene Tech</a>
-                Meetup Group and look for &quot;Eugene Code Camp&quot;.
-              </p>
-            </div>
+      <EccBar />
+      <nuxt />
+    </div>
+    <div class="footer text-center">
+      <div class="container">
+        <div class="row">
+          <!-- Footer Location -->
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">
+              <font-awesome-icon :icon="['fab', 'meetup']" />
+              ECC Meetup Events
+            </h4>
+            <p class="lead mb-0">
+              Head over to the
+              <a href="https://www.meetup.com/EugeneTech/">Eugene Tech</a>
+              Meetup Group and look for &quot;Eugene Code Camp&quot;.
+            </p>
+          </div>
 
-            <!-- Footer Social Icons -->
-            <div class="col-lg-4 mb-5 mb-lg-0">
-              <h4 class="text-uppercase mb-4">
-                <font-awesome-icon :icon="['fab', 'slack']" />
-                ECC Slack Channel
-              </h4>
-              <p class="lead mb-0">
-                Whether you're on the EugeneTech Slack already or
-                <a href="http://eugslack.com/">want to join</a>, look for the
-                channel #eugenecodecamp.
-              </p>
-            </div>
+          <!-- Footer Social Icons -->
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">
+              <font-awesome-icon :icon="['fab', 'slack']" />
+              ECC Slack Channel
+            </h4>
+            <p class="lead mb-0">
+              Whether you're on the EugeneTech Slack already or
+              <a href="http://eugslack.com/">want to join</a>, look for the
+              channel #eugenecodecamp.
+            </p>
+          </div>
 
-            <!-- Footer About Text -->
-            <div class="col-lg-4">
-              <h4 class="text-uppercase mb-4">
-                <font-awesome-icon :icon="['fab', 'github']" />
-                ECC on Github
-              </h4>
-              <p class="lead mb-0">
-                Want to improve this site or find coding projects?
-                <a href="https://github.com/eugeneCodeCamp/">Try here</a>. We
-                accept pull requests!
-              </p>
-            </div>
+          <!-- Footer About Text -->
+          <div class="col-lg-4">
+            <h4 class="text-uppercase mb-4">
+              <font-awesome-icon :icon="['fab', 'github']" />
+              ECC on Github
+            </h4>
+            <p class="lead mb-0">
+              Want to improve this site or find coding projects?
+              <a href="https://github.com/eugeneCodeCamp/">Try here</a>. We
+              accept pull requests!
+            </p>
           </div>
         </div>
       </div>
-      <!-- Copyright Section -->
-      <section class="copyright py-4 text-center text-white">
-        <div class="container">
-          <small
-            >&copy; Eugene Code Camp // Original &quot;Freelancer&quot; theme by
-            <a href="http://startbootstrap.com">Start Bootstrap</a> // Icons by
-            <a href="https://fontawesome.com">Font Awesome</a> and
-            <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a></small
-          >
-        </div>
-      </section>
-
-      <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-      <div class="scroll-to-top d-lg-none position-fixed ">
-        <a
-          class="js-scroll-trigger d-block text-center text-white rounded"
-          href="#page-top"
+    </div>
+    <!-- Copyright Section -->
+    <section class="copyright py-4 text-center text-white">
+      <div class="container">
+        <small
+          >&copy; Eugene Code Camp // Original &quot;Freelancer&quot; theme by
+          <a href="http://startbootstrap.com">Start Bootstrap</a> // Icons by
+          <a href="https://fontawesome.com">Font Awesome</a> and
+          <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a></small
         >
-          <i class="fa fa-chevron-up" />
-        </a>
       </div>
+    </section>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-to-top d-lg-none position-fixed ">
+      <a
+        class="js-scroll-trigger d-block text-center text-white rounded"
+        href="#page-top"
+      >
+        <i class="fa fa-chevron-up" />
+      </a>
     </div>
   </div>
 </template>
+
+<script>
+import EccBar from '@/components/EccBar'
+export default {
+  components: {
+    EccBar
+  }
+}
+</script>
 
 <style>
 .container {
@@ -4214,99 +4201,12 @@ input[type='button'].btn-block {
   }
 }
 
-.nav {
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-}
-
-.nav-link {
-  display: block;
-  padding: 0.5rem 1rem;
-}
-
-.nav-link:hover,
-.nav-link:focus {
-  text-decoration: none;
-}
-
-.nav-link.disabled {
-  color: #6c757d;
-  pointer-events: none;
-  cursor: default;
-}
-
-.nav-tabs {
-  border-bottom: 0.125rem solid #dee2e6;
-}
-
-.nav-tabs .nav-item {
-  margin-bottom: -0.125rem;
-}
-
-.nav-tabs .nav-link {
-  border: 0.125rem solid transparent;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-}
-
-.nav-tabs .nav-link:hover,
-.nav-tabs .nav-link:focus {
-  border-color: #e9ecef #e9ecef #dee2e6;
-}
-
-.nav-tabs .nav-link.disabled {
-  color: #6c757d;
-  background-color: transparent;
-  border-color: transparent;
-}
-
-.nav-tabs .nav-link.active,
-.nav-tabs .nav-item.show .nav-link {
-  color: #495057;
-  background-color: #fff;
-  border-color: #dee2e6 #dee2e6 #fff;
-}
-
-.nav-tabs .dropdown-menu {
-  margin-top: -0.125rem;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-
-.nav-pills .nav-link {
-  border-radius: 0.5rem;
-}
-
-.nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1abc9c;
-}
-
-.nav-fill .nav-item {
-  flex: 1 1 auto;
-  text-align: center;
-}
-
-.nav-justified .nav-item {
-  flex-basis: 0;
-  flex-grow: 1;
-  text-align: center;
-}
-
 .tab-content > .tab-pane {
   display: none;
 }
 
 .tab-content > .active {
   display: block;
-}
-
-.navbar {
-  background-color: #35495e;
 }
 
 .card {
@@ -9717,77 +9617,6 @@ a.text-dark:focus {
   height: 3.5rem;
   background-color: rgba(33, 37, 41, 0.5);
   line-height: 3.1rem;
-}
-
-#mainNav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  font-weight: 700;
-}
-
-#mainNav .navbar-brand {
-  color: #fff;
-}
-
-#mainNav .navbar-nav {
-  margin-top: 1rem;
-}
-
-#mainNav .navbar-nav li.nav-item a.nav-link {
-  color: #fff;
-}
-
-#mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #1abc9c;
-}
-
-#mainNav .navbar-nav li.nav-item a.nav-link:active,
-#mainNav .navbar-nav li.nav-item a.nav-link:focus {
-  color: #fff;
-}
-
-#mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #1abc9c;
-}
-
-#mainNav .navbar-toggler {
-  font-size: 80%;
-  padding: 0.8rem;
-}
-
-@media (min-width: 992px) {
-  #mainNav {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    transition: padding-top 0.3s, padding-bottom 0.3s;
-  }
-  #mainNav .navbar-brand {
-    font-size: 1.75em;
-    transition: font-size 0.3s;
-  }
-  #mainNav .navbar-nav {
-    margin-top: 0;
-  }
-  #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-    color: #fff;
-    background: #1abc9c;
-  }
-  #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active,
-  #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus,
-  #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
-    color: #fff;
-    background: #1abc9c;
-  }
-  #mainNav.navbar-shrink {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
-  #mainNav.navbar-shrink .navbar-brand {
-    font-size: 1.5em;
-  }
 }
 
 .masthead {

@@ -4,9 +4,9 @@
     <b-navbar-toggle target="nav-collapse" />
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav class="ml-auto">
-        <b-nav-item href="#about">About</b-nav-item>
-        <b-nav-item href="#events">Events</b-nav-item>
-        <b-nav-item href="#resources">Resources</b-nav-item>
+        <b-nav-item href="#events">EVENTS</b-nav-item>
+        <b-nav-item href="#about">ABOUT</b-nav-item>
+        <b-nav-item href="#resources">RESOURCES</b-nav-item>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
@@ -20,6 +20,8 @@ export default {}
 .navbar {
   padding-top: 1rem;
   padding-bottom: 1rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -29,10 +31,6 @@ export default {}
 
 .navbar .navbar-brand {
   color: #fff;
-}
-
-.navbar .navbar-nav {
-  margin-top: 1rem;
 }
 
 .navbar .navbar-nav li.nav-item a.nav-link {
@@ -55,6 +53,52 @@ export default {}
 .navbar .navbar-toggler {
   font-size: 80%;
   padding: 0.8rem;
+}
+
+.navbar .nav-item {
+  margin-bottom: -0.125rem;
+}
+.nav-link {
+  border: 0.125rem solid transparent;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+}
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus {
+  border-color: #e9ecef #e9ecef #dee2e6;
+}
+.nav-tabs .nav-link.disabled {
+  color: #6c757d;
+  background-color: transparent;
+  border-color: transparent;
+}
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: #495057;
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
+}
+.nav-tabs .dropdown-menu {
+  margin-top: -0.125rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.nav-pills .nav-link {
+  border-radius: 0.5rem;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1abc9c;
+}
+.nav-fill .nav-item {
+  flex: 1 1 auto;
+  text-align: center;
+}
+.nav-justified .nav-item {
+  flex-basis: 0;
+  flex-grow: 1;
+  text-align: center;
 }
 
 @media (min-width: 992px) {

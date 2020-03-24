@@ -1,98 +1,85 @@
 <template>
   <div>
     <div>
-      <div>
-        <div>
-          <b-navbar toggleable="lg" type="dark" class="navbar">
-            <b-navbar-brand href="#">
-              ECC
-            </b-navbar-brand>
-            <b-navbar-toggle target="nav-collapse" />
-            <b-collapse id="nav-collapse" is-nav>
-              <b-navbar-nav>
-                <b-nav-item href="#about">
-                  About
-                </b-nav-item>
-                <b-nav-item href="#events">
-                  Events
-                </b-nav-item>
-                <b-nav-item href="#resources">
-                  Resources
-                </b-nav-item>
-              </b-navbar-nav>
-            </b-collapse>
-          </b-navbar>
-        </div>
-        <nuxt />
-      </div>
-      <div class="footer text-center">
-        <div class="container">
-          <div class="row">
-            <!-- Footer Location -->
-            <div class="col-lg-4 mb-5 mb-lg-0">
-              <h4 class="text-uppercase mb-4">
-                <font-awesome-icon :icon="['fab', 'meetup']" />
-                ECC Meetup Events
-              </h4>
-              <p class="lead mb-0">
-                Head over to the
-                <a href="https://www.meetup.com/EugeneTech/">Eugene Tech</a>
-                Meetup Group and look for &quot;Eugene Code Camp&quot;.
-              </p>
-            </div>
+      <EccNav />
+      <nuxt />
+    </div>
+    <div class="footer text-center">
+      <div class="container">
+        <div class="row">
+          <!-- Footer Location -->
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">
+              <font-awesome-icon :icon="['fab', 'meetup']" />
+              ECC Meetup Events
+            </h4>
+            <p class="lead mb-0">
+              Head over to the
+              <a href="https://www.meetup.com/EugeneTech/">Eugene Tech</a>
+              Meetup Group and look for &quot;Eugene Code Camp&quot;.
+            </p>
+          </div>
 
-            <!-- Footer Social Icons -->
-            <div class="col-lg-4 mb-5 mb-lg-0">
-              <h4 class="text-uppercase mb-4">
-                <font-awesome-icon :icon="['fab', 'slack']" />
-                ECC Slack Channel
-              </h4>
-              <p class="lead mb-0">
-                Whether you're on the EugeneTech Slack already or
-                <a href="http://eugslack.com/">want to join</a>, look for the
-                channel #eugenecodecamp.
-              </p>
-            </div>
+          <!-- Footer Social Icons -->
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">
+              <font-awesome-icon :icon="['fab', 'slack']" />
+              ECC Slack Channel
+            </h4>
+            <p class="lead mb-0">
+              Whether you're on the EugeneTech Slack already or
+              <a href="http://eugslack.com/">want to join</a>, look for the
+              channel #eugenecodecamp.
+            </p>
+          </div>
 
-            <!-- Footer About Text -->
-            <div class="col-lg-4">
-              <h4 class="text-uppercase mb-4">
-                <font-awesome-icon :icon="['fab', 'github']" />
-                ECC on Github
-              </h4>
-              <p class="lead mb-0">
-                Want to improve this site or find coding projects?
-                <a href="https://github.com/eugeneCodeCamp/">Try here</a>. We
-                accept pull requests!
-              </p>
-            </div>
+          <!-- Footer About Text -->
+          <div class="col-lg-4">
+            <h4 class="text-uppercase mb-4">
+              <font-awesome-icon :icon="['fab', 'github']" />
+              ECC on Github
+            </h4>
+            <p class="lead mb-0">
+              Want to improve this site or find coding projects?
+              <a href="https://github.com/eugeneCodeCamp/">Try here</a>. We
+              accept pull requests!
+            </p>
           </div>
         </div>
       </div>
-      <!-- Copyright Section -->
-      <section class="copyright py-4 text-center text-white">
-        <div class="container">
-          <small
-            >&copy; Eugene Code Camp // Original &quot;Freelancer&quot; theme by
-            <a href="http://startbootstrap.com">Start Bootstrap</a> // Icons by
-            <a href="https://fontawesome.com">Font Awesome</a> and
-            <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a></small
-          >
-        </div>
-      </section>
-
-      <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-      <div class="scroll-to-top d-lg-none position-fixed ">
-        <a
-          class="js-scroll-trigger d-block text-center text-white rounded"
-          href="#page-top"
+    </div>
+    <!-- Copyright Section -->
+    <section class="copyright py-4 text-center text-white">
+      <div class="container">
+        <small
+          >&copy; Eugene Code Camp // Original &quot;Freelancer&quot; theme by
+          <a href="http://startbootstrap.com">Start Bootstrap</a> // Icons by
+          <a href="https://fontawesome.com">Font Awesome</a> and
+          <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a></small
         >
-          <i class="fa fa-chevron-up" />
-        </a>
       </div>
+    </section>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-to-top d-lg-none position-fixed ">
+      <a
+        class="js-scroll-trigger d-block text-center text-white rounded"
+        href="#page-top"
+      >
+        <i class="fa fa-chevron-up" />
+      </a>
     </div>
   </div>
 </template>
+
+<script>
+import EccNav from '@/components/EccNav'
+export default {
+  components: {
+    EccNav
+  }
+}
+</script>
 
 <style>
 .container {

@@ -4292,10 +4292,6 @@ input[type='button'].btn-block {
   display: block;
 }
 
-.navbar {
-  background-color: #35495e;
-}
-
 .card {
   position: relative;
   display: flex;

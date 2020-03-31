@@ -54,8 +54,8 @@
               data-target="#portfolioModal1"
             >
               <h3 class="align-items-center justify-content-center h-100 w-100">
-                <font-awesome-icon :icon="['fas', 'user-friends']" />TBA Eugene
-                Code Camp Meetup
+                <font-awesome-icon :icon="['fas', 'user-friends']" /> 4/5 Eugene
+                Code Camp Online Meetup
               </h3>
             </div>
           </div>
@@ -68,8 +68,8 @@
               data-target="#portfolioModal2"
             >
               <h3 class="align-items-center justify-content-center h-100 w-100">
-                <font-awesome-icon :icon="['fas', 'user-friends']" />TBA Eugene
-                Hack4ACause Meetup
+                <font-awesome-icon :icon="['fas', 'user-friends']" /> 4/19
+                Eugene Code Camp Online Meetup
               </h3>
             </div>
           </div>
@@ -82,8 +82,8 @@
               data-target="#portfolioModal3"
             >
               <h3 class="align-items-center justify-content-center h-100 w-100">
-                <font-awesome-icon :icon="['fas', 'user-friends']" />TBA Code
-                Camp Meetup
+                <font-awesome-icon :icon="['fas', 'user-friends']" /> 5/3 Eugene
+                Code Camp Online Meetup
               </h3>
             </div>
           </div>

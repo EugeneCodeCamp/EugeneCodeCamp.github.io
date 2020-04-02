@@ -48,13 +48,19 @@
         <div class="row">
           <!-- Portfolio Item 1 -->
           <div class="col-md-6 col-lg-4">
-            <div
-              class="portfolio-item mx-auto"
-              data-toggle="modal"
-              data-target="#portfolioModal1"
-            >
+            <div v-b-modal.portfolioModal1 class="portfolio-item mx-auto">
+              <portfolioModal1 />
+              <div
+                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+              >
+                <div
+                  class="portfolio-item-caption-content text-center text-white"
+                >
+                  <font-awesome-icon :icon="['fas', 'plus']" size="3x" />
+                </div>
+              </div>
               <h3 class="align-items-center justify-content-center h-100 w-100">
-                <font-awesome-icon :icon="['fas', 'user-friends']" /> 4/5 Eugene
+                <font-awesome-icon :icon="['fas', 'user-friends']" />4/5 Eugene
                 Code Camp Online Meetup
               </h3>
             </div>
@@ -68,8 +74,8 @@
               data-target="#portfolioModal2"
             >
               <h3 class="align-items-center justify-content-center h-100 w-100">
-                <font-awesome-icon :icon="['fas', 'user-friends']" /> 4/19
-                Eugene Code Camp Online Meetup
+                <font-awesome-icon :icon="['fas', 'user-friends']" />4/19 Eugene
+                Code Camp Online Meetup
               </h3>
             </div>
           </div>
@@ -82,7 +88,7 @@
               data-target="#portfolioModal3"
             >
               <h3 class="align-items-center justify-content-center h-100 w-100">
-                <font-awesome-icon :icon="['fas', 'user-friends']" /> 5/3 Eugene
+                <font-awesome-icon :icon="['fas', 'user-friends']" />5/3 Eugene
                 Code Camp Online Meetup
               </h3>
             </div>
@@ -226,34 +232,35 @@
                   <li>
                     <a
                       href="https://www.udemy.com/design-and-develop-a-killer-website-with-html5-and-css3/"
+                      >Build Responsive Real World Websites with HTML5 and
+                      CSS3</a
                     >
-                      Build Responsive Real World Websites with HTML5 and CSS3
-                    </a>
                   </li>
                   <li>
-                    <a href="https://www.udemy.com/advanced-css-and-sass/">
-                      Advanced CSS and Sass: Flexbox, Grid, Animations and More!
-                    </a>
+                    <a href="https://www.udemy.com/advanced-css-and-sass/"
+                      >Advanced CSS and Sass: Flexbox, Grid, Animations and
+                      More!</a
+                    >
                   </li>
                   <li>
                     <a
                       href="https://www.udemy.com/the-complete-javascript-course/"
+                      >The Complete JavaScript Course 2019: Build Real
+                      Projects!</a
                     >
-                      The Complete JavaScript Course 2019: Build Real Projects!
-                    </a>
                   </li>
                   <li>
                     <a
                       href="https://www.udemy.com/nodejs-express-mongodb-bootcamp/"
+                      >Node.js, Express, MongoDB &amp; More: The Complete
+                      Bootcamp 2019</a
                     >
-                      Node.js, Express, MongoDB &amp; More: The Complete
-                      Bootcamp 2019
-                    </a>
                   </li>
                   <li>
-                    <a href="https://www.udemy.com/course/web-design-secrets/">
-                      Web Design for Web Developers: Build Beautiful Websites!
-                    </a>
+                    <a href="https://www.udemy.com/course/web-design-secrets/"
+                      >Web Design for Web Developers: Build Beautiful
+                      Websites!</a
+                    >
                   </li>
                 </ul>
               </li>
@@ -329,8 +336,11 @@
 </template>
 
 <script>
+import portfolioModal1 from '@/components/EventModal'
 export default {
-  components: {}
+  components: {
+    portfolioModal1
+  }
 }
 </script>
 

@@ -1,6 +1,6 @@
 <template>
   <b-modal
-    id="EventModal"
+    :id="'EventModal' + event.id"
     class="portfolio-modal modal fade bg-secondary"
     tabindex="-1"
     role="dialog"
@@ -15,7 +15,7 @@
               <h2
                 class="portfolio-modal-title text-secondary text-uppercase mb-0"
               >
-                4/5 Eugene Code Camp Online Meetup
+                {{ event.title }}
               </h2>
               <!-- Icon Divider -->
               <div class="divider-custom">
@@ -26,19 +26,9 @@
                 <div class="divider-custom-line"></div>
               </div>
               <!-- Portfolio Modal - Text -->
+              <p class="mb-5">{{ event.description }}</p>
               <p class="mb-5">
-                We're going to try this online. Please be on your computer when
-                we meet up, in case you need to share your screen! Tell the
-                group what you're working on, get some ideas of what to do next,
-                and we can all help each other get through this, whether "this"
-                is being stuck on the code or stuck in your house.
-              </p>
-              <p class="mb-5">
-                <a
-                  href="https://web.cvent.com/event/f2e9191c-6323-4e80-bb0b-c080002ac037/summary"
-                  target="_new"
-                  >More Information</a
-                >
+                <a :href="event.eventUrl" target="_new">More Information</a>
               </p>
             </div>
           </div>
@@ -49,7 +39,21 @@
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    event: {
+      type: Object,
+      default: function() {
+        return {
+          id: 1,
+          title: 'TBA',
+          description: 'Check back soon for more events.',
+          eventUrl: 'https://www.meetup.com/EugeneCodeCamp/events/'
+        }
+      }
+    }
+  }
+}
 </script>
 
 <style></style>

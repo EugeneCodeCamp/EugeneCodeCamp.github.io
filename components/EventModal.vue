@@ -1,6 +1,6 @@
 <template>
   <b-modal
-    id="portfolioModal1"
+    id="EventModal"
     class="portfolio-modal modal fade bg-secondary"
     tabindex="-1"
     role="dialog"

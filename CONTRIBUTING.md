@@ -28,6 +28,14 @@ If you do not have direct write access (which is generally only given to those w
 
 You'll notice some of the issues have the [good first issue](https://github.com/EugeneCodeCamp/EugeneCodeCamp.github.io/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) label. These task are good to learn the basics of using github and making a pull request. If you need help with one of these issues, please make a comment in the issue to request help.
 
+## Taking a Task
+
+When selecting a task, start with those that are on the earliest open project or the oldest ones labeled good first issue.
+
+If you would like to take an issue, please assign it to yourself. Do not assign yourself more than one issue at a time, as we want others to be able to contribute.
+
+When you are ready to submit your pull request, you will need 2 reviewers OR one admin to approve your request. You can request reviewers or just make the pull request and someone will see it.
+
 ## Kind Pull Requests
 
 The people approving and merging pull requests are here to help, but you can make it easier on them by making good pull requests. This includes:

@@ -1,6 +1,6 @@
 # [Eugene Code Camp](https://eugenecodecamp.com/)
 
-Welcome to Eugene Code Camp. The purpose of this site is to share coding meet up opportunities in the Eugene, Oregon area, and coding resources. All are welcome.
+Welcome to Eugene Code Camp. The purpose of this site is to share coding meet up opportunities in the Eugene, Oregon area, and coding resources. All are welcome. Please refer to the [Contributing](https://github.com/EugeneCodeCamp/EugeneCodeCamp.github.io/blob/master/CONTRIBUTING.md) and [Code of Conduct](https://github.com/EugeneCodeCamp/EugeneCodeCamp.github.io/blob/master/CODE_OF_CONDUCT.md) documents for more information about participating in this repo.
 
 
 This site is an ongoing project, currently being built in [Vue.js](https://vuejs.org/), using [Nuxt.js](https://nuxtjs.org/) and [Boostratp-vue](https://bootstrap-vue.js.org/), styled using the [Freelancer Theme from Start-Bootstrap](https://github.com/BlackrockDigital/startbootstrap-freelancer).

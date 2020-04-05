@@ -13,7 +13,10 @@ The repo tasks are divided into 2 types, [projects](https://github.com/EugeneCod
 ### For Contributors with Write Access
 
 If you are a direct contributor, you can make a direct push from a branch to the repo to make a pull request. To do this, go into your local clone and do
-    $ git checkout -b issue-number
+
+```
+$ git checkout -b issue-number
+```
 
 Do the work in this branch and then push it back for your pull request. The git prompts will assist you in this.
 

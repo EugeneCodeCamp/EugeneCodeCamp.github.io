@@ -30,7 +30,7 @@ You'll notice some of the issues have the [good first issue](https://github.com/
 
 ## Taking a Task
 
-When selecting a task, start with those that are on the earliest open project or the oldest ones labeled good first issue.
+When selecting a task, start with those that are on the earliest open project or the oldest ones labeled good first issue. (If you don't need the practice or have more experience in programming, please leave the first issues for our beginners.)
 
 If you would like to take an issue, please assign it to yourself. Do not assign yourself more than one issue at a time, as we want others to be able to contribute.
 

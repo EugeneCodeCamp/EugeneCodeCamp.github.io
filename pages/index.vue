@@ -46,44 +46,29 @@
 
         <!-- Portfolio Grid Items -->
         <div class="row">
-          <!-- Portfolio Item 1 -->
-          <div class="col-md-6 col-lg-4">
+          <!-- Portfolio Items -->
+          <div
+            v-for="event in events"
+            :key="event.id"
+            class="col-md-6 col-lg-4"
+          >
             <div
+              v-b-modal="'EventModal' + event.id"
               class="portfolio-item mx-auto"
-              data-toggle="modal"
-              data-target="#portfolioModal1"
             >
+              <EventModal :event="event" />
+              <div
+                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+              >
+                <div
+                  class="portfolio-item-caption-content text-center text-white"
+                >
+                  <font-awesome-icon :icon="['fas', 'plus']" size="3x" />
+                </div>
+              </div>
               <h3 class="align-items-center justify-content-center h-100 w-100">
-                <font-awesome-icon :icon="['fas', 'user-friends']" /> 4/5 Eugene
-                Code Camp Online Meetup
-              </h3>
-            </div>
-          </div>
-
-          <!-- Portfolio Item 2 -->
-          <div class="col-md-6 col-lg-4">
-            <div
-              class="portfolio-item mx-auto"
-              data-toggle="modal"
-              data-target="#portfolioModal2"
-            >
-              <h3 class="align-items-center justify-content-center h-100 w-100">
-                <font-awesome-icon :icon="['fas', 'user-friends']" /> 4/19
-                Eugene Code Camp Online Meetup
-              </h3>
-            </div>
-          </div>
-
-          <!-- Portfolio Item 3 -->
-          <div class="col-md-6 col-lg-4">
-            <div
-              class="portfolio-item mx-auto"
-              data-toggle="modal"
-              data-target="#portfolioModal3"
-            >
-              <h3 class="align-items-center justify-content-center h-100 w-100">
-                <font-awesome-icon :icon="['fas', 'user-friends']" /> 5/3 Eugene
-                Code Camp Online Meetup
+                <font-awesome-icon :icon="['fas', 'user-friends']" />
+                {{ event.title }}
               </h3>
             </div>
           </div>
@@ -226,21 +211,22 @@
                   <li>
                     <a
                       href="https://www.udemy.com/design-and-develop-a-killer-website-with-html5-and-css3/"
+                      >Build Responsive Real World Websites with HTML5 and
+                      CSS3</a
                     >
-                      Build Responsive Real World Websites with HTML5 and CSS3
-                    </a>
                   </li>
                   <li>
-                    <a href="https://www.udemy.com/advanced-css-and-sass/">
-                      Advanced CSS and Sass: Flexbox, Grid, Animations and More!
-                    </a>
+                    <a href="https://www.udemy.com/advanced-css-and-sass/"
+                      >Advanced CSS and Sass: Flexbox, Grid, Animations and
+                      More!</a
+                    >
                   </li>
                   <li>
                     <a
                       href="https://www.udemy.com/the-complete-javascript-course/"
+                      >The Complete JavaScript Course 2019: Build Real
+                      Projects!</a
                     >
-                      The Complete JavaScript Course 2019: Build Real Projects!
-                    </a>
                   </li>
                   <li>
                     <a
@@ -251,9 +237,10 @@
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.udemy.com/course/web-design-secrets/">
-                      Web Design for Web Developers: Build Beautiful Websites!
-                    </a>
+                    <a href="https://www.udemy.com/course/web-design-secrets/"
+                      >Web Design for Web Developers: Build Beautiful
+                      Websites!</a
+                    >
                   </li>
                 </ul>
               </li>
@@ -329,8 +316,38 @@
 </template>
 
 <script>
+import EventModal from '@/components/EventModal'
 export default {
-  components: {}
+  components: {
+    EventModal
+  },
+  data: function() {
+    return {
+      events: [
+        {
+          id: 1,
+          title: '4/5 Eugene Code Camp Online Meetup',
+          description:
+            "We're going to try this online. Please be on your computer when we meet up, in case you need to share your screen! Tell the group what you're working on, get some ideas of what to do next, and we can all help each other get through this, whether 'this' is being stuck on the code or stuck in your house.",
+          eventUrl: 'https://www.meetup.com/EugeneCodeCamp/events/269740499/'
+        },
+        {
+          id: 2,
+          title: '4/19 Eugene Code Camp Online Meetup',
+          description:
+            "We're going to try this online. Please be on your computer when we meet up, in case you need to share your screen! Tell the group what you're working on, get some ideas of what to do next, and we can all help each other get through this, whether 'this' is being stuck on the code or stuck in your house.",
+          eventUrl: 'https://www.meetup.com/EugeneCodeCamp/events/269749792/'
+        },
+        {
+          id: 3,
+          title: '5/3 Eugene Code Camp Online Meetup',
+          description:
+            "We're going to try this online. Please be on your computer when we meet up, in case you need to share your screen! Tell the group what you're working on, get some ideas of what to do next, and we can all help each other get through this, whether 'this' is being stuck on the code or stuck in your house.",
+          eventUrl: 'https://www.meetup.com/EugeneCodeCamp/events/269749796/'
+        }
+      ]
+    }
+  }
 }
 </script>
 

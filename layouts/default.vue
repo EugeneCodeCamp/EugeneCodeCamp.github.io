@@ -5605,14 +5605,14 @@ a.close.disabled {
 .modal-body {
   position: relative;
   flex: 1 1 auto;
-  padding: 4rem 1rem;
+  padding: 0rem 2rem;
 }
 
 .modal-footer {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 4rem 1rem;
+  margin: auto;
   border-top: 0 solid #dee2e6;
   border-bottom-right-radius: 0.75rem;
   border-bottom-left-radius: 0.75rem;

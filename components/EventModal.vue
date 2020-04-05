@@ -3,12 +3,11 @@
     :id="'EventModal' + event.id"
     class="sm-secondary"
     tabindex="-1"
-    role="dialog"
     aria-labelledby="EventModal"
     ok-only
     button-size="lg"
   >
-    <div class="modal-dialog modal-xl" role="document">
+    <div role="document">
       <div class="text-center">
         <div class="row justify-content-center">
           <div class="col-lg-8">

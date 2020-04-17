@@ -15,8 +15,8 @@
             </h4>
             <p class="lead mb-0">
               Head over to the
-              <a href="https://www.meetup.com/EugeneTech/">Eugene Tech</a>
-              Meetup Group and look for &quot;Eugene Code Camp&quot;.
+              <a href="https://www.meetup.com/EugeneTech/">Eugene Code Camp Meetup Group</a>
+              and look for our next gathering!
             </p>
           </div>
 

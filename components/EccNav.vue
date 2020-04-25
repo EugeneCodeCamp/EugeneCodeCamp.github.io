@@ -6,7 +6,9 @@
     class="navbar navbar-expand-lg text-uppercase fixed-top navbar-shrink bg-secondary"
   >
     <div class="container">
-      <b-navbar-brand class="navbar-brand" href="#">ECC</b-navbar-brand>
+      <b-navbar-brand>
+        <nuxt-link class="navbar-brand" to="/">ECC</nuxt-link>
+      </b-navbar-brand>
       <b-navbar-toggle target="nav-collapse" />
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav id="navbarResponsive" class="ml-auto">

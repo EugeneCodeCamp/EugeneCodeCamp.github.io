@@ -9774,6 +9774,10 @@ a.text-dark:focus {
     font-size: 1.5em;
   }
 }
+.navbar-brand > .exact-active-link {
+  background: none;
+}
+
 @media (min-width: 770px) {
   .exact-active-link {
     color: #fff;

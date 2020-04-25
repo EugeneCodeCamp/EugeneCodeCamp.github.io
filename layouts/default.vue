@@ -15,7 +15,9 @@
             </h4>
             <p class="lead mb-0">
               Head over to the
-              <a href="https://www.meetup.com/EugeneCodeCamp/">Eugene Code Camp Meetup Group</a>
+              <a href="https://www.meetup.com/EugeneCodeCamp/"
+                >Eugene Code Camp Meetup Group</a
+              >
               and look for our next gathering!
             </p>
           </div>
@@ -9770,6 +9772,12 @@ a.text-dark:focus {
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.5em;
+  }
+}
+@media (min-width: 770px) {
+  .exact-active-link {
+    color: #fff;
+    background: #1abc9c;
   }
 }
 

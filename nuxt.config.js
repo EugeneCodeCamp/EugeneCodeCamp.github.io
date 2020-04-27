@@ -15,7 +15,7 @@ export default {
           'A local meetup for learning how to code, exploring tools, and getting support in the tech industry.'
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon_open_close.png' }]
   },
   /*
    ** Customize the progress-bar color

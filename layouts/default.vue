@@ -9774,8 +9774,8 @@ a.text-dark:focus {
 }
 
 .masthead {
-  padding-top: calc(6rem + 74px);
-  padding-bottom: 6rem;
+  padding-top: calc(3rem + 74px);
+  padding-bottom: 3rem;
 }
 
 .masthead .masthead-heading {
@@ -9793,8 +9793,8 @@ a.text-dark:focus {
 
 @media (min-width: 992px) {
   .masthead {
-    padding-top: calc(6rem + 104px);
-    padding-bottom: 6rem;
+    padding-top: calc(3rem + 104px);
+    padding-bottom: 3rem;
   }
   .masthead .masthead-heading {
     font-size: 4rem;

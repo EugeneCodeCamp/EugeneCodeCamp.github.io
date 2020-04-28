@@ -326,17 +326,17 @@ export default {
       events: [
         {
           id: 1,
-          title: '4/5 Eugene Code Camp Online Meetup',
+          title: '4/30 Eugene Web Devs (YouTube Live)',
           description:
-            "We're going to try this online. Please be on your computer when we meet up, in case you need to share your screen! Tell the group what you're working on, get some ideas of what to do next, and we can all help each other get through this, whether 'this' is being stuck on the code or stuck in your house.",
-          eventUrl: 'https://www.meetup.com/EugeneCodeCamp/events/269740499/'
+            "Google's Lighthouse tool scores your site on speed, SEO, and performance. Returning quality suggestions based on their current recommendations. Join Antonio as he goes over the why's and hows of using Lighthouse and making incremental changes to benefit your project.",
+          eventUrl: 'https://www.meetup.com/eugenewebdevs/events/270244806/'
         },
         {
           id: 2,
-          title: '4/19 Eugene Code Camp Online Meetup',
+          title: '5/1 Funky Ducks Lunch (Zoom)',
           description:
-            "We're going to try this online. Please be on your computer when we meet up, in case you need to share your screen! Tell the group what you're working on, get some ideas of what to do next, and we can all help each other get through this, whether 'this' is being stuck on the code or stuck in your house.",
-          eventUrl: 'https://www.meetup.com/EugeneCodeCamp/events/269749792/'
+            "Bring your lunches! Bring your laptops! Bring your brains! This week we're talking about websockets.",
+          eventUrl: 'https://www.meetup.com/Elm-Eug/events/sfhcmrybchbcb/'
         },
         {
           id: 3,

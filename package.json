@@ -1,7 +1,7 @@
 {
   "name": "eugene-code-camp",
-  "version": "1.0.0",
-  "description": "eugene code camp in vue",
+  "version": "2.2.0",
+  "description": "Eugene Code Camp website",
   "author": "",
   "private": true,
   "scripts": {

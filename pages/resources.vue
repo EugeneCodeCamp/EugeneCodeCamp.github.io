@@ -21,52 +21,52 @@
       <!-- Find Us Section -->
       <div class="row">
         <div class="col-md-6 col-lg-4">
-          <ul>
-            <li>
+          <ul class="text-left">
+            <li class="list-group-item">
               <a href="https://www.freecodecamp.org">freeCodeCamp</a> -
               Responsive web design, javascript, front end libraries, data
               visualization, information security and more!
             </li>
-            <li>
+            <li class="list-group-item">
               <a href="https://www.codecademy.com">Codecademy</a> - HTML, CSS,
               Python, JavaScript, SQL, Ruby, PHP and more!
             </li>
-            <li>
+            <li class="list-group-item">
               <a href="https://www.theodinproject.com">The Odin Project</a> -
               tracks for Full Stack Ruby on Rails, Full Stack JS, and Front End
               Only
             </li>
-            <li>
+            <li class="list-group-item">
               <a href="https://www.udemy.com/the-web-developer-bootcamp/"
                 >The Web Developer Bootcamp</a
               >
               - HTML, CSS, JS, Node, and More!
             </li>
-            <li>
+            <li class="list-group-item">
               <a href="https://developer.mozilla.org/en-US/docs/Learn"
                 >Mozilla Development Network</a
               >
               - HTML, CSS, JS documentation, examples, and tutorials!
             </li>
-            <li>
+            <li class="list-group-item">
               <a href="https://fullstackopen.com">Full Stack Open 2019</a> -
               Learn React, Redux, Node.js, MongoDB, and GraphQL in one go! This
               course will introduce you to modern JavaScript-based web
               development. The main focus is on building single page
               applications with ReactJS that use REST APIs built with Node.js.
             </li>
-            <li>
+            <li class="list-group-item">
               <a href="https://www.100daysofcode.com/">100 Days of Code</a> -
               Commit to 100 Days of Code!
             </li>
           </ul>
         </div>
         <div class="col-md-6 col-lg-4">
-          <ul>
-            <li>
+          <ul class="text-left">
+            <li class="list-group-item">
               Udemy Courses by Jonas Schmedtmann (low cost bootcamp-style
               classes from a top teacher):
-              <ul>
+              <ul class="text-left">
                 <li>
                   <a
                     href="https://www.udemy.com/design-and-develop-a-killer-website-with-html5-and-css3/"
@@ -100,7 +100,7 @@
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="list-group-item">
               <a
                 href="https://www.edx.org/course/cs50s-introduction-to-computer-science"
                 >CS50 at Harvard University</a
@@ -111,8 +111,8 @@
           </ul>
         </div>
         <div class="col-md-6 col-lg-4">
-          <ul>
-            <li>
+          <ul class="text-left">
+            <li class="list-group-item">
               Eugene-Area Coding Meetups:
               <ul>
                 <li>

@@ -28,3 +28,15 @@ This site is an ongoing project, currently being built in [Vue.js](https://vuejs
     $ npm run lintfix
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+## Database
+
+For funsies, this site has an associated headless WordPress stack which serves as an API for REST or GraphQL.
+
+### Resources Data
+
+[REST Endpoint for Resources](https://api.eugenecodecamp.com/wp-json/wp/v2/resources/)
+
+### Documentation
+
+[WPGraphQL](https://docs.wpgraphql.com/)

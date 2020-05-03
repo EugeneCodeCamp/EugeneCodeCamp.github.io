@@ -35,8 +35,8 @@ For funsies, this site has an associated headless WordPress stack which serves a
 
 ### General Endpoints
 
-[REST Endpoint](https://api.eugenecodecamp.com/wp-json/wp/v2/)
-[GraphQL Endpoint](https://api.eugenecodecamp.com/graphql)
+* [REST Endpoint](https://api.eugenecodecamp.com/wp-json/wp/v2/)
+* [GraphQL Endpoint](https://api.eugenecodecamp.com/graphql)
 
 ### Resources Data
 
@@ -47,9 +47,8 @@ The resources are labeled with tags for categorization, and feature these five p
 * description
 * slug
 
-
-[REST Endpoint for Resources](https://api.eugenecodecamp.com/wp-json/wp/v2/resources/)
-GraphQL - use main endpoint
+* [REST Endpoint for Resources](https://api.eugenecodecamp.com/wp-json/wp/v2/resources/)
+* GraphQL - use main endpoint
 
 Sample GraphQL query to pull all available resources
 
@@ -135,5 +134,5 @@ query MyQuery {
 
 ### Documentation and Testing
 
-[WPGraphQL](https://docs.wpgraphql.com/)
-[GraphQL Query Tool](https://lucasconstantino.github.io/graphiql-online/)
+* [WPGraphQL](https://docs.wpgraphql.com/)
+* [GraphQL Query Tool](https://lucasconstantino.github.io/graphiql-online/)

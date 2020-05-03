@@ -177,7 +177,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-lg-4 ml-auto">
+          <div class="col-lg-4 mr-auto">
             <ul>
               <li>
                 <a href="https://www.meetup.com/Technology-Association-of-Oregon-in-greater-Eugene/">Eugene ISSA</a> - A monthly presentation for cybersecurity professionals and students.

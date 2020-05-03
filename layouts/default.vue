@@ -15,7 +15,9 @@
             </h4>
             <p class="lead mb-0">
               Head over to the
-              <a href="https://www.meetup.com/EugeneCodeCamp/">Eugene Code Camp Meetup Group</a>
+              <a href="https://www.meetup.com/EugeneCodeCamp/"
+                >Eugene Code Camp Meetup Group</a
+              >
               and look for our next gathering!
             </p>
           </div>
@@ -5096,7 +5098,7 @@ a.badge-dark.focus {
   padding: 0.75rem 1.25rem;
   margin-bottom: -0.125rem;
   background-color: #fff;
-  border: 0.125rem solid rgba(0, 0, 0, 0.125);
+  border: none;
 }
 
 .list-group-item:first-child {
@@ -9770,6 +9772,16 @@ a.text-dark:focus {
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.5em;
+  }
+}
+.navbar-brand > .exact-active-link {
+  background: none;
+}
+
+@media (min-width: 770px) {
+  .exact-active-link {
+    color: #fff;
+    background: #1abc9c;
   }
 }
 

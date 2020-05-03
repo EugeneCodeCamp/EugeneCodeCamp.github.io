@@ -139,6 +139,60 @@
         </div>
       </div>
     </section>
+
+    <!-- Meetups Section -->
+    <section id="meetups" class="page-section">
+      <div class="container">
+        <!-- Meetups Section Heading -->
+        <h2
+          class="page-section-heading text-center text-uppercase text-secondary mb-0"
+        >
+          Local Meetups
+        </h2>
+
+        <!-- Icon Divider -->
+        <div class="divider-custom">
+          <div class="divider-custom-line" />
+          <div class="divider-custom-icon">
+            <font-awesome-icon :icon="['fas', 'star']" />
+          </div>
+          <div class="divider-custom-line" />
+        </div>
+
+        <!-- Meetups Data Section -->
+        <div class="row">
+          <div class="col-lg-4 ml-auto">
+            <ul>
+              <li>
+                <a href="http://eugenewebdevs.com">Eugene Web Devs</a> - A monthly meetup for those interested in web development.
+              </li>
+              <li>
+                <a href="https://www.meetup.com/Elm-Eug/">Elm Eugene / Funky Ducks</a> - For everything functional programming! (Also a fun and educational Friday lunch hangout.)
+              </li>
+              <li>
+                <a href="https://www.meetup.com/pyeugene/">PyEugene</a> - A monthly meetup for those interested in the Python programming language.
+              </li>
+              <li>
+                <a href="https://www.meetup.com/Eugene-Area-SQL-Server-User-Group/">Eugene Area SQL Server User Group</a> - An official PASS chapter monthly meetup for SQL Server users.
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 ml-auto">
+            <ul>
+              <li>
+                <a href="https://www.meetup.com/Technology-Association-of-Oregon-in-greater-Eugene/">Eugene ISSA</a> - A monthly presentation for cybersecurity professionals and students.
+              </li>
+              <li>
+                <a href="https://www.meetup.com/Corvallis-WordPress-Meetup/">Corvallis WordPress Meetup</a> - A group of local WordPress developers, designers, and publishers who get together to share knowledge and experience.
+              </li>
+              <li>
+                <a href="https://www.meetup.com/Eugene-Cybersecurity/">Eugene Cybersecurity</a> - A meetup to talk IT Cybersecurity and related issues.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 

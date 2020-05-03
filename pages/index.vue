@@ -162,30 +162,30 @@
         <!-- Meetups Data Section -->
         <div class="row">
           <div class="col-lg-4 ml-auto">
-            <ul>
-              <li>
+            <ul class="text-left">
+              <li class="list-group-item">
                 <a href="http://eugenewebdevs.com">Eugene Web Devs</a> - A monthly meetup for those interested in web development.
               </li>
-              <li>
+              <li class="list-group-item">
                 <a href="https://www.meetup.com/Elm-Eug/">Elm Eugene / Funky Ducks</a> - For everything functional programming! (Also a fun and educational Friday lunch hangout.)
               </li>
-              <li>
+              <li class="list-group-item">
                 <a href="https://www.meetup.com/pyeugene/">PyEugene</a> - A monthly meetup for those interested in the Python programming language.
               </li>
-              <li>
+              <li class="list-group-item">
                 <a href="https://www.meetup.com/Eugene-Area-SQL-Server-User-Group/">Eugene Area SQL Server User Group</a> - An official PASS chapter monthly meetup for SQL Server users.
               </li>
             </ul>
           </div>
           <div class="col-lg-4 mr-auto">
-            <ul>
-              <li>
+            <ul class="text-left">
+              <li class="list-group-item">
                 <a href="https://www.meetup.com/Technology-Association-of-Oregon-in-greater-Eugene/">Eugene ISSA</a> - A monthly presentation for cybersecurity professionals and students.
               </li>
-              <li>
+              <li class="list-group-item">
                 <a href="https://www.meetup.com/Corvallis-WordPress-Meetup/">Corvallis WordPress Meetup</a> - A group of local WordPress developers, designers, and publishers who get together to share knowledge and experience.
               </li>
-              <li>
+              <li class="list-group-item">
                 <a href="https://www.meetup.com/Eugene-Cybersecurity/">Eugene Cybersecurity</a> - A meetup to talk IT Cybersecurity and related issues.
               </li>
             </ul>

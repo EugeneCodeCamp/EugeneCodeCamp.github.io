@@ -33,6 +33,11 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 For funsies, this site has an associated headless WordPress stack which serves as an API for REST or GraphQL.
 
+### General Endpoints
+
+[REST Endpoint](https://api.eugenecodecamp.com/wp-json/wp/v2/)
+[GraphQL Endpoint](https://api.eugenecodecamp.com/graphql)
+
 ### Resources Data
 
 [REST Endpoint for Resources](https://api.eugenecodecamp.com/wp-json/wp/v2/resources/)

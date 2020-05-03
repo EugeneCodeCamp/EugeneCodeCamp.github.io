@@ -40,15 +40,15 @@ For funsies, this site has an associated headless WordPress stack which serves a
 
 ### Resources Data
 
-The resources are labeled with tags for categorization, and feature these five pieces of data for each resource:
-* link (url)
-* title
-* tags (slugs)
-* description
-* slug
-
 * [REST Endpoint for Resources](https://api.eugenecodecamp.com/wp-json/wp/v2/resources/)
 * GraphQL - use main endpoint
+
+The resources are labeled with tags for categorization, and feature these five pieces of data for each resource:
+* link (url) `resource_url`
+* title `title`
+* tags (slugs) `termSlugs(taxonomies: TAG)` / `tags` > `slug`
+* description `resource_description`
+* slug `slug`
 
 Sample GraphQL query to pull all available resources
 

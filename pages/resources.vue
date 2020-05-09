@@ -19,7 +19,13 @@
       <div class="row">
         <div class="col-md-6 col-lg-4">
           <ul class="text-left">
-            <li class="list-group-item">{{ resources }}</li>
+            <li
+              v-for="(resource, id) in resources"
+              :key="id"
+              class="list-group-item"
+            >
+              {{ resource.node.title }}
+            </li>
           </ul>
         </div>
       </div>
@@ -44,6 +50,7 @@ export default {
               resources {
                 edges {
                   node {
+                    id
                     resource_description
                     resource_url
                     slug
@@ -55,7 +62,7 @@ export default {
             `
         }
       )
-      this.resources = response
+      this.resources = response.data.resources.edges
     } catch (e) {
       console.log('err', e)
     }

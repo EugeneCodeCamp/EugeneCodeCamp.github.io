@@ -3,8 +3,11 @@
   <section id="resources" class="page-section">
     <div class="container">
       <!-- Resources Section Heading -->
-      <!-- <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Resources</h2> -->
-      <h2 class="page-section-heading">Resources</h2>
+      <h2
+        class="page-section-heading text-center text-uppercase text-secondary mb-0"
+      >
+        Resources
+      </h2>
 
       <!-- Icon Divider -->
       <div class="divider-custom">
@@ -17,14 +20,17 @@
 
       <!-- Find Us Section -->
       <div class="row">
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-12">
           <ul class="text-left">
             <li
               v-for="(resource, id) in resources"
               :key="id"
               class="list-group-item"
             >
-              {{ resource.node.title }}
+              <a :href="resource.node.resource_url">
+                {{ resource.node.title }}
+              </a>
+              - {{ resource.node.resource_description }}
             </li>
           </ul>
         </div>
@@ -34,18 +40,12 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
-  data() {
-    return {
-      resources: ''
-    }
-  },
-  async mounted() {
-    try {
-      const response = await this.$axios.$post(
-        'https://api.eugenecodecamp.com/graphql',
-        {
-          query: `
+  asyncData() {
+    return axios
+      .post(`https://api.eugenecodecamp.com/graphql`, {
+        query: `
             query MyQuery {
               resources {
                 edges {
@@ -60,12 +60,10 @@ export default {
               }
             }
             `
-        }
-      )
-      this.resources = response.data.resources.edges
-    } catch (e) {
-      console.log('err', e)
-    }
+      })
+      .then(res => {
+        return { resources: res.data.data.resources.edges }
+      })
   }
 }
 </script>

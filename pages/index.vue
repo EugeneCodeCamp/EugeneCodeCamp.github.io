@@ -207,10 +207,10 @@ export default {
       events: [
         {
           id: 1,
-          title: '4/30 Eugene Web Devs (YouTube Live)',
+          title: '3/25 Eugene Web Devs (YouTube Live)',
           description:
-            "Google's Lighthouse tool scores your site on speed, SEO, and performance. Returning quality suggestions based on their current recommendations. Join Antonio as he goes over the why's and hows of using Lighthouse and making incremental changes to benefit your project.",
-          eventUrl: 'https://www.meetup.com/eugenewebdevs/events/270244806/'
+            "Micro services are a great way to implement single purpose logic without having adding unnecessary servers. Join Antonio as he goes over the why's and hows of using AWS provided free and simple solutions.",
+          eventUrl: 'https://www.meetup.com/eugenewebdevs/events/276779493/'
         },
         {
           id: 2,
